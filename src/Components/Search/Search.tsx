@@ -10,7 +10,7 @@ const Search = ({
 
   return (
     <div className="search">
-    <form>
+    <form onSubmit={onFormSubmit}>
      <input
             type="text"
             className="search__text"
@@ -19,12 +19,12 @@ const Search = ({
             onChange={(e) => setUsername?.(e.target.value)}
             required={true}
             name="user"
+            pattern="^[a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}$"
           />
         <button
               className={`search__submit ${disabled ? "search__submit__disabled" : ""}`}
-              type="button"
-              disabled={disabled}
-              onClick={(e) => onFormSubmit && onFormSubmit(e)}>
+              type="submit"
+              disabled={disabled}>
               Submit
          </button>
       </form>

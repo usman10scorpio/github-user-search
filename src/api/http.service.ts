@@ -19,7 +19,6 @@ export const get = async (url : string) => {
       }
     }
   } catch (error) {
-    console.log(error);
     return {
       success: false,
       data: {},

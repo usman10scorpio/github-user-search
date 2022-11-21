@@ -6,14 +6,17 @@ const Home = () => {
   const [username, setUsername] = useState("");
   const [disabled, setDisabled] = useState(false);
   const [submitClick, submitClicked] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   const onFormSubmit = async (e:any) => {
     e.preventDefault();
-    if (username !== "") submitClicked(true)
+    if (username !== "") { 
+      submitClicked(true) 
+      setSuccess(true)
+    }
   };
 
   useEffect(() => {
-    console.log(username)
 	}, [username]);
 
   return (
@@ -26,7 +29,7 @@ const Home = () => {
                   disabled={disabled} 
                   setDisabled={setDisabled}
           />
-          <ReactDataTable username={username} submitClick={submitClick} submitClicked={submitClicked}/> 
+          {success && <ReactDataTable username={username} submitClick={submitClick} submitClicked={submitClicked}/> }
       </div>
     </>
   );

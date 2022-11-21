@@ -1,4 +1,5 @@
 import { searchInputInterface } from '../../util/interface'
+import './Search.css'
 
 const Search = ({
   username,
@@ -19,7 +20,7 @@ const Search = ({
             onChange={(e) => setUsername?.(e.target.value)}
             required={true}
             name="user"
-            pattern="^[a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}$"
+            pattern="^[A-Za-z\d](?:[A-Za-z\d]|-(?=[A-Za-z\d])){0,38}$"
           />
         <button
               className={`search__submit ${disabled ? "search__submit__disabled" : ""}`}

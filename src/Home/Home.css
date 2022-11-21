@@ -1,3 +1,11 @@
+:export {
+  zanah: #e0efdc;
+}
 
+.home {
+  background-color: #e0efdc;
+  height: 100vh;
+  position: relative;
+}
 
 /*# sourceMappingURL=Home.css.map */

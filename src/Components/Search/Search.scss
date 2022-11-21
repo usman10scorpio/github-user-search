@@ -1,4 +1,62 @@
-div {
+@import "../../assets/sass/importFiles";
 
-    display: flex;
+.search {
+
+   width: 100%;
+   height: 100%;
+
+   form {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    input {
+        width: 42.2rem;
+        height: 4.5rem;
+        font-weight: 500;
+        color: $aquaDeep;
+        box-sizing: border-box;
+        background: $white;
+        outline: none;
+        border: 0.1rem solid $aquaDeep;
+        letter-spacing: .09rem;
+        font-size: 1.6rem;
+        padding: 1.35rem 0 1.35rem 2.4rem;
+        border-radius: 2rem;
+
+        &:focus {
+            border: 0.2rem solid $aquaDeep;
+            box-shadow: 0.4rem 0.6rem 2rem rgb(2 67 60 / 36%);
+        }
+
+        @include breakpoint(mobileLarge) {
+            width: 100%;
+        }
+    }
+
+    &__submit {
+        width: 42.2rem;
+        height: 4.5rem;
+        cursor: pointer;
+        outline: none;
+        padding: .5rem .5rem;
+        background-color: #02433c;
+        font-family: "Maven Pro";
+        font-weight: 800;
+        color: $white;
+        box-shadow: 0.4rem 0.6rem 2rem rgb(2 67 60 / 36%);
+        letter-spacing: .135rem;
+        border: 1px solid transparent;
+        margin-top: 2rem;
+        border-radius: 2rem;
+
+        @include breakpoint(mobileLarge) {
+            width: 100%;
+        }
+    }
+   
 }

@@ -1,4 +1,5 @@
 import { useState,useEffect } from "react";
+import './Home.css'
 import ReactDataTable from "../Components/ReactDataTable/ReactDataTable";
 import Search from '../Components/Search/Search';
 

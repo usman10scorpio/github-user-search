@@ -2,6 +2,7 @@ export interface searchInterface {
     login: string,
     avatar_url: string,
     type: string,
+    html_url: string,
 }
 
 export interface searchResponseInterface {

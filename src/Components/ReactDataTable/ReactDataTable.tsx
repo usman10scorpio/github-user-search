@@ -95,6 +95,10 @@ const ReactDataTable = ({username = "", submitClick = false, submitClicked}: rea
 			onChangeRowsPerPage={handlePerRowsChange}
 			onChangePage={handlePageChange}
             className="rtable"
+			onRowClicked={(row,e) => window.open(
+				row.html_url,
+				'_blank'
+			  )}
 		/>
 	);
 }

@@ -48,9 +48,7 @@ export interface columnsInterface {
 
 export interface searchInputInterface {
     username?: string;
-    disabled?:boolean;
     setUsername?: (username: string) => void;
-    setDisabled?: (disabled: boolean) => void;
     onFormSubmit?: (formsubmit: object) => object;
 }
 

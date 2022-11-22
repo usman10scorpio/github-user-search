@@ -3,9 +3,12 @@
 }
 
 .home {
-  background-color: #e0efdc;
-  height: 100vh;
+  display: block;
+  height: 100%;
   position: relative;
+}
+.home__username {
+  height: unset;
 }
 
 /*# sourceMappingURL=Home.css.map */

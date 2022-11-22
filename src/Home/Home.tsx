@@ -5,7 +5,6 @@ import Search from '../Components/Search/Search';
 
 const Home = () => {
   const [username, setUsername] = useState("");
-  const [disabled, setDisabled] = useState(false);
   const [submitClick, submitClicked] = useState(false);
   const [success, setSuccess] = useState(false);
 
@@ -22,13 +21,11 @@ const Home = () => {
 
   return (
     <>
-      <div className="home">
+      <div className={"home" + (username ?  " home__username" : "")}>
           <Search 
                   username={username} 
                   setUsername={setUsername} 
                   onFormSubmit={onFormSubmit} 
-                  disabled={disabled} 
-                  setDisabled={setDisabled}
           />
           {success && <ReactDataTable username={username} submitClick={submitClick} submitClicked={submitClicked}/> }
       </div>

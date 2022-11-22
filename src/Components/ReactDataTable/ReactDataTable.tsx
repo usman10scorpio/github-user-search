@@ -12,16 +12,16 @@ const ReactDataTable = ({username = "", submitClick = false, submitClicked}: rea
 
     const columns: TableColumn<searchInterface>[] = [
         {
-            name: 'login',
+            name: 'Login',
             selector: row => row.login,
         },
         {
-            name: 'avatar_url',
+            name: 'Avatar Url',
             selector: row => row.avatar_url,
             cell: (row) => (<img src={row.avatar_url} alt="" className="rtable__avatar"/>)
         },
         {
-            name: 'type',
+            name: 'User Type',
             selector: row => row.type,
         },
     ];
@@ -84,7 +84,6 @@ const ReactDataTable = ({username = "", submitClick = false, submitClicked}: rea
 
 	return (
 		<DataTable
-			title="Users"
 			columns={columns}
 			data={data}
 			progressPending={loading}
@@ -95,7 +94,7 @@ const ReactDataTable = ({username = "", submitClick = false, submitClicked}: rea
 			onChangeRowsPerPage={handlePerRowsChange}
 			onChangePage={handlePageChange}
             className="rtable"
-			onRowClicked={(row,e) => window.open(
+			onRowClicked={(row) => window.open(
 				row.html_url,
 				'_blank'
 			  )}

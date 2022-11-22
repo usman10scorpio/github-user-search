@@ -86,6 +86,11 @@
         @include breakpoint(mobileLarge) {
             width: 100%;
         }
+
+        &:hover {
+            background-color: $white;
+            color: $aquaDeep;
+        }
     }
 
     &__btnusername{

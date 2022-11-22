@@ -84,6 +84,10 @@
     width: 100%;
   }
 }
+.search__submit:hover {
+  background-color: #ffffff;
+  color: #02433c;
+}
 .search__btnusername {
   margin-top: unset;
   flex: 0 0 10%;

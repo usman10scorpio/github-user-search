@@ -50,6 +50,7 @@ export interface searchInputInterface {
     username?: string;
     setUsername?: (username: string) => void;
     onFormSubmit?: (formsubmit: object) => object;
+    success?: boolean
 }
 
 export interface reactTableInterface {

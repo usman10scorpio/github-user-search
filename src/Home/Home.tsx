@@ -21,11 +21,12 @@ const Home = () => {
 
   return (
     <>
-      <div className={"home" + (username ?  " home__username" : "")}>
+      <div className={"home" + (success ?  " home__username" : "")}>
           <Search 
                   username={username} 
                   setUsername={setUsername} 
                   onFormSubmit={onFormSubmit} 
+                  success={success} 
           />
           {success && <ReactDataTable username={username} submitClick={submitClick} submitClicked={submitClicked}/> }
       </div>

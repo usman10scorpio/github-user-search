@@ -5,12 +5,13 @@ const Search = ({
   username,
   setUsername,
   onFormSubmit,
+  success
 }:searchInputInterface) => { 
 
   return (
     <div className="search">
-    <form onSubmit={onFormSubmit} className={"search__form" + (username ?  " search__fusername" : "")}>
-      <div className={"search__heading" + (username ?  " search__husername" : "")}>{username ? 'GS' : 'Github Search'}</div>
+    <form onSubmit={onFormSubmit} className={"search__form" + (success ?  " search__fusername" : "")}>
+      <div className={"search__heading" + (success ?  " search__husername" : "")}>{success ? 'GS' : 'Github Search'}</div>
      <input
             type="text"
             className="search__text"
@@ -22,7 +23,7 @@ const Search = ({
             pattern="^[A-Za-z\d](?:[A-Za-z\d]|-(?=[A-Za-z\d])){0,38}$"
           />
         <button
-              className={"search__submit" + (username ?  " search__btnusername" : "")}
+              className={"search__submit" + (success ?  " search__btnusername" : "")}
               type="submit">
               Search
          </button>

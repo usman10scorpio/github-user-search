@@ -56,10 +56,14 @@ export interface searchInputInterface {
 export interface reactTableInterface {
     username: string;
     submitClick: boolean;
+    testSuccessBit?: boolean;
     submitClicked:(submitClick : boolean) => void
 }
 
 export interface fetchUserApiInterface {
     page: number;
     handlePageChange: boolean
+}
+export interface homeTestInterface {
+    testSuccessBit?: boolean;
 }

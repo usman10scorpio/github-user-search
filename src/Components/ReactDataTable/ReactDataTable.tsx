@@ -4,7 +4,7 @@ import { searchInterface,reactTableInterface,fetchUserApiInterface } from '../..
 import { searchApi } from "../../api/searchApi";
 import "./ReactDataTable.css";
 
-const ReactDataTable = ({username = "", submitClick = false, submitClicked}: reactTableInterface) => { 
+const ReactDataTable = ({username = "", submitClick = false, testSuccessBit = false, submitClicked}: reactTableInterface) => { 
 
 	const [data, setData] = useState([]);
 	const [loading, setLoading] = useState(false);
@@ -29,7 +29,8 @@ const ReactDataTable = ({username = "", submitClick = false, submitClicked}: rea
 	const paginationComponentOptions = {
 		noRowsPerPage: true,
 	};
-    
+
+	const mockData = [ { "login": "samick17", "avatar_url": "https://avatars.githubusercontent.com/u/5528607?v=4", "type": "User", "html_url": "https://github.com/samick17", }, { "login": "sarahalvessa", "avatar_url": "https://avatars.githubusercontent.com/u/98770963?v=4", "html_url": "https://github.com/sarahalvessa", "type": "User", }, { "login": "sahildua2305", "avatar_url": "https://avatars.githubusercontent.com/u/5206277?v=4", "html_url": "https://github.com/sahildua2305", "type": "User", }];
 
 	const fetchUsers = useCallback (async ({page = 1, handlePageChange = false} : fetchUserApiInterface) => {
 
@@ -79,10 +80,12 @@ const ReactDataTable = ({username = "", submitClick = false, submitClicked}: rea
 	};
 
 	useEffect(() => {
+		if(testSuccessBit) return;
 		if(username !== "" && submitClick) fetchUsers({handlePageChange : true, page : 1}); 
-	  }, [fetchUsers, username, submitClick]);
+	  }, [fetchUsers, username, submitClick,testSuccessBit]);
 
 	return (
+		<>
 		<DataTable
 			columns={columns}
 			data={data}
@@ -99,6 +102,18 @@ const ReactDataTable = ({username = "", submitClick = false, submitClicked}: rea
 				'_blank'
 			  )}
 		/>
+		{testSuccessBit && <DataTable
+			columns={columns}
+			data={mockData}
+			progressPending={loading}
+			pagination
+			paginationServer
+			paginationTotalRows={3}
+			paginationComponentOptions={paginationComponentOptions}
+            className="rtable"
+			/>
+		}
+		</>
 	);
 }
 

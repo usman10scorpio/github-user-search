@@ -3,10 +3,16 @@
 }
 
 .rtable__avatar {
-  width: 100px;
-  height: 100px;
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
   border: 1px solid f6f6f6;
+}
+@media (max-width: 425px) {
+  .rtable__avatar {
+    width: 5rem;
+    height: 5rem;
+  }
 }
 
 .rdt_TableRow {

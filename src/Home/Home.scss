@@ -10,4 +10,8 @@
         height: unset;
     }
 
+    @include breakpoint(mobileLarge) {
+        padding: 0 1rem;
+    }
+
 }

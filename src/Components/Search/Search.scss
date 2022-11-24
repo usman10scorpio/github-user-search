@@ -14,9 +14,9 @@
         margin-bottom: 1rem;
         font-family: monospace;
 
-        @include breakpoint(mobileLarge) {
+        @include breakpoint(mobileSmall) {
             font-size: 3rem;
-        }
+          }
    }
 
    &__husername {

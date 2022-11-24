@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../assets/sass/variables/_colors.scss","ReactDataTable.scss"],"names":[],"mappings":"AAQA;EACE,OANM;;;ACCJ;EACI;EACA;EACA;EACA;;;AAOJ;EACI","file":"ReactDataTable.css"}
+{"version":3,"sourceRoot":"","sources":["../../assets/sass/variables/_colors.scss","ReactDataTable.scss","../../assets/sass/_mixins.scss"],"names":[],"mappings":"AAQA;EACE,OANM;;;ACCJ;EACI;EACA;EACA;EACA;;ACNJ;EDEA;IAOQ;IACA;;;;AAQR;EACI","file":"ReactDataTable.css"}

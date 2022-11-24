@@ -10,5 +10,10 @@
 .home__username {
   height: unset;
 }
+@media (max-width: 425px) {
+  .home {
+    padding: 0 1rem;
+  }
+}
 
 /*# sourceMappingURL=Home.css.map */

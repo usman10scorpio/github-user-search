@@ -36,9 +36,9 @@ test('React data table avatar column', async () => {
   })
 });
 
-test('React data table heading changed to GS', async () => {
+test('React data table heading changed to GUS', async () => {
   render(<Home testSuccessBit={true}/>);
   await waitFor(() => {
-    expect(screen.getByText(/GS/i)).toBeInTheDocument()
+    expect(screen.getByText(/GUS/i)).toBeInTheDocument()
   })
 });

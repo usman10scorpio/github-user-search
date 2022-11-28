@@ -4,7 +4,7 @@ import Search from './Search';
 
 test('React search component find heading text', () => {
   render(<Search  />);
-  const linkElement = screen.getByText(/Github Search/i);
+  const linkElement = screen.getByText(/Github user Search/i);
   expect(linkElement).toBeInTheDocument();
 });
 

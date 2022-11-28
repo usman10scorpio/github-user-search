@@ -29,9 +29,9 @@ Your app is ready to be deployed!
 
 ## Screenshots
 
-![Alt text](https://raw.githubusercontent.com/usman10scorpio/usman-iqbal-githubsearch-web/main/public/screenshots/one.png?raw=true "User Inteface mains screen")
+![Alt text](https://github.com/usman10scorpio/usman-iqbal-githubsearch-web/blob/main/public/screenshots/one.png "User Inteface mains screen")
 
-![Alt text](https://raw.githubusercontent.com/usman10scorpio/usman-iqbal-githubsearch-web/main/public/screenshots/two.png?raw=true "Search results - web")
+![Alt text](https://github.com/usman10scorpio/usman-iqbal-githubsearch-web/blob/main/public/screenshots/two.png "Search results - web")
 
-![Alt text](https://raw.githubusercontent.com/usman10scorpio/usman-iqbal-githubsearch-web/main/public/screenshots/three.png?raw=true "Search results - mobile")
+![Alt text](https://github.com/usman10scorpio/usman-iqbal-githubsearch-web/blob/main/public/screenshots/three.png "Search results - mobile")
 

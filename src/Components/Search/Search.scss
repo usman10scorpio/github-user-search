@@ -6,7 +6,7 @@
    height: 100%;
 
    &__heading {
-        font-size: 4.2rem;
+        font-size: 3rem;
         color: $aquaDeep;
         font-weight: bold;
         text-transform: uppercase;
@@ -14,9 +14,13 @@
         margin-bottom: 1rem;
         font-family: monospace;
 
-        @include breakpoint(mobileSmall) {
-            font-size: 3rem;
+        @include breakpoint(mobileLarge) {
+            font-size: 2.5rem;
           }
+
+        @include breakpoint(mobileSmall) {
+            font-size: 1.9rem;
+        }
    }
 
    &__husername {

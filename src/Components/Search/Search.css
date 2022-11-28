@@ -7,7 +7,7 @@
   height: 100%;
 }
 .search__heading {
-  font-size: 4.2rem;
+  font-size: 3rem;
   color: #02433c;
   font-weight: bold;
   text-transform: uppercase;
@@ -15,9 +15,14 @@
   margin-bottom: 1rem;
   font-family: monospace;
 }
+@media (max-width: 425px) {
+  .search__heading {
+    font-size: 2.5rem;
+  }
+}
 @media (max-width: 375px) {
   .search__heading {
-    font-size: 3rem;
+    font-size: 1.9rem;
   }
 }
 .search__husername {

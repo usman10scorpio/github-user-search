@@ -11,7 +11,7 @@ const Search = ({
   return (
     <div className="search">
     <form onSubmit={onFormSubmit} className={"search__form" + (success ?  " search__fusername" : "")}>
-      <div className={"search__heading" + (success ?  " search__husername" : "")}>{success ? 'GS' : 'Github Search'}</div>
+      <div className={"search__heading" + (success ?  " search__husername" : "")}>{success ? 'GUS' : 'Github User Search'}</div>
      <input
             type="text"
             className="search__text"

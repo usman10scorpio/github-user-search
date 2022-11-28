@@ -27,11 +27,15 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
+After you run the `npm run build` and build folder is made successully, you can check if its working correct locally by installing `serve` locally (https://create-react-app.dev/docs/deployment/ ) and run below command to check
+
+`npx serve -s build` 
+
 ## Screenshots
 
-![Alt text](https://raw.githubusercontent.com/usman10scorpio/usman-iqbal-githubsearch-web/main/public/screenshots/one.png?token=GHSAT0AAAAAABZAYHENK76IH2FZPIXPONVCY4ERXRA "User Inteface mains screen")
+![Alt text](https://github.com/usman10scorpio/usman-iqbal-githubsearch-web/blob/main/public/screenshots/one.png "User Inteface mains screen")
 
-![Alt text](https://raw.githubusercontent.com/usman10scorpio/usman-iqbal-githubsearch-web/main/public/screenshots/two.png?token=GHSAT0AAAAAABZAYHENCBCIBDFQL3CA4376Y4ERY7Q "Search results - web")
+![Alt text](https://github.com/usman10scorpio/usman-iqbal-githubsearch-web/blob/main/public/screenshots/two.png "Search results - web")
 
-![Alt text](https://raw.githubusercontent.com/usman10scorpio/usman-iqbal-githubsearch-web/main/public/screenshots/three.png?token=GHSAT0AAAAAABZAYHENSYSS2EOPSVXQWUCWY4ERZ7Q "Search results - mobile")
+![Alt text](https://github.com/usman10scorpio/usman-iqbal-githubsearch-web/blob/main/public/screenshots/three.png "Search results - mobile")
 

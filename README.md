@@ -27,7 +27,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-After you run the npm run build folder successully, you can check if its working correct locally by installing `serve` locally (https://create-react-app.dev/docs/deployment/ ) and run below command to check
+After you run the `npm run build` and build folder is made successully, you can check if its working correct locally by installing `serve` locally (https://create-react-app.dev/docs/deployment/ ) and run below command to check
 
 `npx serve -s build` 
 

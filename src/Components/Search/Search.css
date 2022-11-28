@@ -97,5 +97,27 @@
   margin-top: unset;
   flex: 0 0 10%;
 }
+.search__validation--show {
+  display: block;
+  width: 42.2rem;
+}
+.search__validation--show ul {
+  padding-left: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #02433c;
+  opacity: 0.4;
+}
+.search__validation--show ul li {
+  padding: 0.5rem 0;
+}
+@media (max-width: 425px) {
+  .search__validation--show {
+    width: 100%;
+  }
+}
+.search__validation--hide {
+  display: none;
+}
 
 /*# sourceMappingURL=Search.css.map */

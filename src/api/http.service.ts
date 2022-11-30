@@ -2,7 +2,7 @@ import axios from "axios";
 import { searchResponseInterface } from "../util/interface"
 // below token is added to override usage limit
 // not recommended for production for that proper sign in or auth token process creation is advised
-axios.defaults.headers.common['Authorization'] = 'Bearer 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' // for all requests
+axios.defaults.headers.common['Authorization'] = 'Bearer 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' // for all requests
 
 export const get = async (url : string) => {
   try {

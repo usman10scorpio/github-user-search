@@ -4,6 +4,9 @@
       @content;
     }
   }
+
+
+  
   @if $point==mobileSmall {
     @media (max-width: 375px) {
       @content;
